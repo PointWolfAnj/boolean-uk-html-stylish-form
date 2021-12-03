@@ -2,12 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form</title>
   </head>
-  <body>
 
+  <body>
+    <main>
+      <h1>Say Hello|</h1>
+      <form>
+        <label for="name">
+          Your Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </label>
+        <label for="email">
+          Your Email
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </label>
+        <label for="services">
+          Needed Services
+          <select id="services" name="services">
+            <option value="">Choose Service A</option>
+            <option value="">Choose Service B</option>
+            <option value="">Choose Service C</option>
+          </select>
+        </label>
+        <label for="budget">
+          Your budget
+          <select id="budget" name="budget">
+            <option value="">Select budget</option>
+            <option value="">£3-£4</option>
+            <option value="">£5-£6</option>
+          </select>
+        </label>
+        <label for="message">
+          Message
+          <textarea name="message" id="message"></textarea>
+        </label>
+        <button>Submit &#8594;</button>
+      </form>
+    </main>
   </body>
 </html>
